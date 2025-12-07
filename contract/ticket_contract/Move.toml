@@ -1,0 +1,9 @@
+[package]
+name = "ticket_box"
+edition = "2024"
+
+[dependencies]
+Iota = { git = "https://github.com/iotaledger/iota.git", subdir = "crates/iota-framework/packages/iota-framework", rev = "devnet" }
+
+[addresses]
+ticket_box = "0x0"
