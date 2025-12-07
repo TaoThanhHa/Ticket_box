@@ -3,7 +3,7 @@
 
 A decentralized ticket minting and claiming application built using the IOTA Move framework and a Next.js frontend.
 
-#1. Project Overview
+##1. Project Overview
 
 Ticket Box enables users to interact with blockchain-based event tickets through:
 
@@ -23,7 +23,7 @@ Frontend	Next.js 15+ (Turbopack)
 Wallet Integration	@iota/dapp-kit
 Blockchain RPC	@iota/iota-sdk
 
-#2. Move Contract Summary
+##2. Move Contract Summary
 Ticket
 
 Stores information related to an event ticket, including event name, date, seat, and price.
