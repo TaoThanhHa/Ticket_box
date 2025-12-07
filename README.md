@@ -91,3 +91,5 @@ Sometimes the development environment leaves stale .next/ build files. Removing 
 GitHub Repository Ownership Warning
 
 Happens on WSL when file ownership does not match expected user context. Adding the directory to Git safe list resolves this.
+
+Contract Address: https://explorer.iota.org/object/0x639e096da63f15e9602784130a342d0b19a87023e16ea6183f0a4b2dfcb088ed?network=devnet
