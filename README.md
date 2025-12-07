@@ -3,7 +3,7 @@
 
 A decentralized ticket minting and claiming application built using the IOTA Move framework and a Next.js frontend.
 
-##1. Project Overview
+## 1. Project Overview
 
 Ticket Box enables users to interact with blockchain-based event tickets through:
 
@@ -23,7 +23,7 @@ Frontend	Next.js 15+ (Turbopack)
 Wallet Integration	@iota/dapp-kit
 Blockchain RPC	@iota/iota-sdk
 
-##2. Move Contract Summary
+## 2. Move Contract Summary
 Ticket
 
 Stores information related to an event ticket, including event name, date, seat, and price.
@@ -44,13 +44,13 @@ Creates a Ticket, wraps it in a TicketBox, and transfers it to the caller.
 claim_ticket
 Generates a Claim object as proof that the user has successfully claimed their ticket.
 
-#3. Network Configuration
+## 3. Network Configuration
 
 The network configuration file connects the frontend to the correct RPC network (Devnet, Testnet, Mainnet) and loads the proper Move package ID from deployment.
 
 The configuration exports utilities to access network variables in React components such as the package ID and client URL.
 
-#4. Frontend Overview
+## 4. Frontend Overview
 
 Built with Next.js app directory architecture
 
@@ -62,7 +62,7 @@ Move calls are executed through the connected wallet
 
 Network configuration injects the correct package ID so the frontend can call the Move module functions
 
-#5. How the dApp Works
+## 5. How the dApp Works
 Ticket Creation (Admin Use)
 
 Event details such as event name, seat, date, and price are assembled into a Ticket object and stored inside a TicketBox object, which is transferred to the admin wallet.
@@ -71,7 +71,7 @@ Ticket Claiming (User)
 
 Users claim their ticket, and a Claim object is created. This provides on-chain proof of ticket redemption or ownership.
 
-#6. Troubleshooting Summary
+## 6. Troubleshooting Summary
 Invalid Contract or Wrong Function
 
 Occurs when the frontend uses the incorrect package ID or module path. Ensure the module path matches the deployed contract.
